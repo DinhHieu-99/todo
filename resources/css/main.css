@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(14, 14, 20);
+    font-family: 'Exo', sans-serif;
+}
+.title p{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+.todo-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.todo-main .input-value{
+    background-color: rgb(37, 37, 59);
+    color: rgba(255, 255, 255, 0.555);
+    padding: 5px;
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.todo-main .form-input-value .add{
+    background-color: none;
+}
+.todo-main .form-input-value{
+    width: 100%;
+}
+.todo-main .form-input-value input{
+    padding-left: 10px;
+    outline: none;
+}
+#todos{
+    background-color: rgb(37, 37, 59);
+}
+#todos{
+    padding: 10px;
+}
+#todos li{
+    color: white;
+    list-style-type: none;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.336);
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+ 
+#todos li span{
+    letter-spacing: 3px;
+    /* position: relative; */
+}
+
+li.completed{
+    color: rgba(255, 255, 255, 0.336)!important;
+    text-decoration: line-through;
+}
+
+li.completed span{
+    color: rgb(30, 187, 187);
+}
+
+li input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    z-index: 100;
+    border-radius:50%
+  }
+
+span:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+span:checked ~ .checkmark {
+    background-color: red;
+  }
+  
+
+.todo-main .task-todo .final{
+    border-bottom: none;
+}
+
+.footer{
+    border: solid 1px rgb(180, 3, 180);
+    background-color: rgb(37, 37, 59);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    
+}
+
+.footer span{
+    color: white;
+}
